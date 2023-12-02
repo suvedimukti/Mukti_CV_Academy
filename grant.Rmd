@@ -1,0 +1,8 @@
+# Grants
+
+```{r grant}
+vroom::vroom("data/grant.csv") %>%
+  #dplyr::filter(highlight == 1) %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why)
+``` 

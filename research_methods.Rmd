@@ -1,0 +1,6 @@
+# Primary Research Methods
+
+ * Spatial Analysis and Mapping Using Geographic Object-Based Image Analysis (GEOBIA)
+ * Leveraging high-resolution Imagery, UAV, and LiDAR Data for Informed Decision-making 
+ * (Non)Linear Mixed effect modelling, Multivariate Analysis
+ * Supervised and Unsupervised Machine and Deep learning

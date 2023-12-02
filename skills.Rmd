@@ -1,0 +1,25 @@
+# Skills
+
+\begin{cvskills}
+  \cvskill
+    {GIS Data Collection and 
+    Post Processing}
+    {Tremble Juno, Trimble GeoHX (6000), Spectra Precision ProMark 220, ArcPad (10.2x), TerraSync,\newline GPS pathfinder office (> v5.2), Vertex Laser Geo}
+
+  \cvskill
+    {GIS Mapping and Modeling}
+    {ArcGIS pro (3x), ArcGIS 10x (Model builder, Python for ArcGIS), Google Earth Pro,\newline Google Earth Engine (GEE), QGIS 3x, FME 2019, ArcGIS Field Maps, ArcCollector}
+
+  \cvskill
+    {Remote Sensing and Image Analysis}
+    {R, Jupyter Notebook, GEE, ERDAS Imagine, eCognition, ENVI}
+
+  \cvskill
+    {Data Analysis and Econometrics}
+    {R(5 yrs), STATA (10 yrs), Python Scripting(3 yrs)}
+
+  \cvskill
+    {Quantitative Research}
+    {t-test, ANOVAs, Regressions, Factor Analysis, Principal Component Analysis, Redundancy Analysis,\newline
+    (Un)supervised Machine Learning, Deep Learning (DL)}
+\end{cvskills}

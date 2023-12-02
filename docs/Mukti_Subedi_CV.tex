@@ -1,0 +1,593 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{414141}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Mukti Ram}{Subedi}
+
+\position{Post Doctoral Associate}
+\address{180 E Green St, Athens, GA, 30602}
+
+\mobile{+1 361-228-2801}
+\email{\href{mailto:mukti.subedi@uga.edu}{\nolinkurl{mukti.subedi@uga.edu}}}
+\homepage{suvedimukti.github.io/}
+\github{suvedimukti}
+\linkedin{subedimukti}
+\twitter{suvedimukti}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+\quote{I am a forester, geospatial and remote sensing data analyst.}
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+\usepackage{xurl}
+
+% Pandoc CSL macros
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {November 26, 2023}
+    {Mukti Ram Subedi~~~·~~~Curriculum Vitae}
+  {\thepage~ of \pageref{LastPage}~}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\section{Research Topics}\label{research-topics}
+
+\begin{itemize}
+\tightlist
+\item
+  Land Use and Land Cover Mapping
+\item
+  Time Series Image Analysis
+\item
+  Image Acquisition, Processing, Analysis and Visualization
+\item
+  Carbon Stock Assessment
+\item
+  Forests and Trees Modeling
+\item
+  Human Dimensions in Forestry
+\end{itemize}
+
+\section{Primary Research Methods}\label{primary-research-methods}
+
+\begin{itemize}
+\tightlist
+\item
+  Spatial Analysis and Mapping Using Geographic Object-Based Image
+  Analysis (GEOBIA)
+\item
+  Leveraging high-resolution Imagery, UAV, and LiDAR Data for Informed
+  Decision-making
+\item
+  (Non)Linear Mixed effect modelling, Multivariate Analysis
+\item
+  Supervised and Unsupervised Machine and Deep learning
+\end{itemize}
+
+\section{Skills}\label{skills}
+
+\begin{cvskills}
+  \cvskill
+    {GIS Data Collection and 
+    Post Processing}
+    {Tremble Juno, Trimble GeoHX (6000), Spectra Precision ProMark 220, ArcPad (10.2x), TerraSync,\newline GPS pathfinder office (> v5.2), Vertex Laser Geo}
+
+  \cvskill
+    {GIS Mapping and Modeling}
+    {ArcGIS pro (3x), ArcGIS 10x (Model builder, Python for ArcGIS), Google Earth Pro,\newline Google Earth Engine (GEE), QGIS 3x, FME 2019, ArcGIS Field Maps, ArcCollector}
+
+  \cvskill
+    {Remote Sensing and Image Analysis}
+    {R, Jupyter Notebook, GEE, ERDAS Imagine, eCognition, ENVI}
+
+  \cvskill
+    {Data Analysis and Econometrics}
+    {R(5 yrs), STATA (10 yrs), Python Scripting(3 yrs)}
+
+  \cvskill
+    {Quantitative Research}
+    {t-test, ANOVAs, Regressions, Factor Analysis, Principal Component Analysis, Redundancy Analysis,\newline
+    (Un)supervised Machine Learning, Deep Learning (DL)}
+\end{cvskills}
+
+\section{Education}\label{education}
+
+\begin{cventries}
+    \cventry{Ph.D. in Wildlife, Aquatic, and Wildlands Science and Management}{Texas Tech University}{Lubbock, TX}{Jan. 2019 - Aug. 2022}{\begin{cvitems}
+\item Dissertation Title: ``Leveraging NAIP, LiDAR and Sentinel data for accurate multiclass mapping of heterogenous grassland landscapes in Texas.''
+\item Committee members: Drs. Carlos Portillo Quintero (adviser; Dissertation chair), Samantha Kahl, Robert Cox,  Nancy McIntyre, and Xiaopeng Song
+\end{cvitems}}
+    \cventry{M.Sc. in Biology}{Texas A\&M University}{Kingsville, TX}{Jan. 2014 - Aug. 2016}{\begin{cvitems}
+\item Committee members: Drs. Weimin Xi (adviser; Thesis chair), Christopher Edgar, and Sandra Rideout-Hanzak
+\end{cvitems}}
+    \cventry{B.Sc. in Forestry (GIS elective)}{Institute of Foresty, Tribhuwan  University}{Kritipur, Kathmandu}{Mar. 2005 - Jan. 2010}{}\vspace{-4.0mm}
+\end{cventries}
+
+\section{Publications}\label{publications}
+
+\subsection{Refereed Journal Papers}\label{refereed-journal-papers}
+
+\phantomsection\label{refs-042a5607f0aa86a02828f64c32305b25}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-chaudhary2023east}
+1. Chaudhary, T., Xi, W., \textbf{Subedi, M.R.}, Rideout-Hanzak, S., Su,
+H., Dewez, N. P., \& Clarke, S. (2023). East texas forests show strong
+resilience to exceptional drought. \emph{Forestry}, \emph{96}(3),
+326--339.
+
+\bibitem[\citeproctext]{ref-subedi2023leveraging}
+2. \textbf{Subedi, M.R.} R., Portillo-Quintero, C., Kahl, S. S.,
+McIntyre, N. E., Cox, R. D., \& Perry, G. (2023). Leveraging NAIP
+imagery for accurate large-area land use/land cover mapping: A case
+study in central texas. \emph{Photogrammetric Engineering \& Remote
+Sensing}, \emph{89}(9), 547--560.
+
+\bibitem[\citeproctext]{ref-subedi2023site}
+3. \textbf{Subedi, M.R.} R., Zhao, D., Dwivedi, P., Costanzo, B. E., \&
+Martin, J. A. (2023). Site index models for loblolly pine forests in the
+southern united states developed with forest inventory and analysis
+data. \emph{Forest Science}, fxad039.
+
+\bibitem[\citeproctext]{ref-gautam2022moisture}
+4. Gautam, D., Gaire, N. P., \textbf{Subedi, M.R.}, Sharma, R. P.,
+Tripathi, S., Sigdel, R., Basnet, S., Miya, M. S., Chhetri, P. K., \&
+Tong, X. (2022). Moisture, not temperature, in the pre-monsoon
+influences pinus wallichiana growth along the altitudinal and aspect
+gradients in the lower himalayas of central nepal. \emph{Forests},
+\emph{13}(11), 1771.
+
+\bibitem[\citeproctext]{ref-portillo2022trends}
+5. Portillo-Quintero, C., Grisham, B., Haukos, D., Boal, C. W., Hagen,
+C., Wan, Z., \textbf{Subedi, M.R.}, \& Menkiti, N. (2022). Trends in
+lesser prairie-chicken habitat extent and distribution on the southern
+high plains. \emph{Remote Sensing}, \emph{14}(15), 3780.
+
+\bibitem[\citeproctext]{ref-portillo2022novel}
+6. Portillo-Quintero, C., Hernández-Stefanoni, J. L., Reyes-Palomeque,
+G., \& \textbf{Subedi, M.R.} R. (2022). Novel approaches in tropical
+forests mapping and monitoring--time for operationalization. In
+\emph{Remote Sensing} (20; Vol. 14, p. 5068). MDPI.
+
+\bibitem[\citeproctext]{ref-yan2022complex}
+7. YAN, M., LIU, Z., SUBEDI, M. R., Linfeng, L., \& Weimin, X. (2022).
+The complex impacts of unprecedented drought on forest tree mortality: A
+case study of dead trees in east texas, USA. \emph{Chinese Journal of
+Ecology}, \emph{42}(3), 1034--1046.
+
+\bibitem[\citeproctext]{ref-portillo2021road}
+8. Portillo-Quintero, C., Hernández-Stefanoni, J. L., Reyes-Palomeque,
+G., \& \textbf{Subedi, M.R.} R. (2021). The road to operationalization
+of effective tropical forest monitoring systems. \emph{Remote Sensing},
+\emph{13}(7), 1370.
+
+\bibitem[\citeproctext]{ref-subedi2021tree}
+9. \textbf{Subedi, M.R.} R., Xi, W., Edgar, C. B., Rideout-Hanzak, S.,
+\& Yan, M. (2021). Tree mortality and biomass loss in drought-affected
+forests of east texas, USA. \emph{Journal of Forestry Research},
+\emph{32}, 67--80.
+
+\bibitem[\citeproctext]{ref-jackson2020season}
+10. Jackson, M., Portillo-Quintero, C., Cox, R., Ritchie, G., Johnson,
+M., Humagain, K., \& \textbf{Subedi, M.R.} R. (2020). Season,
+classifier, and spatial resolution impact honey mesquite and yellow
+bluestem detection using an unmanned aerial system. \emph{Rangeland
+Ecology \& Management}, \emph{73}(5), 658--672.
+
+\bibitem[\citeproctext]{ref-kina2020analysis}
+11. Kina, K., Bhumpakhpan, N., Trisurat, Y., Mainmit, N., Ghimire, K.,
+\& \textbf{Subedi, M.R.} (2020). Analysis of potential distribution of
+tiger habitat using MaxEnt in chitwan national park, nepal.
+\emph{Journal of Remote Sensing and GIS Association of Thailand},
+\emph{21}(3), 1--15.
+
+\bibitem[\citeproctext]{ref-subedi2018height}
+12. \textbf{Subedi, M.R.} R., Oli, B. N., Shrestha, S., \& Chhin, S.
+(2018). Height-diameter modeling of cinnamomum tamala grown in natural
+forest in mid-hill of nepal. \emph{International Journal of Forestry
+Research}, \emph{2018}, 1--11.
+
+\bibitem[\citeproctext]{ref-subedi2018assessment}
+13. \textbf{Subedi, M.R.} R., Xi, W., Edgar, C. B., Rideout-Hanzak, S.,
+\& Hedquist, B. C. (2018). Assessment of geostatistical methods for
+spatiotemporal analysis of drought patterns in east texas, USA.
+\emph{Spatial Information Research}, 1--11.
+
+\bibitem[\citeproctext]{ref-subedi2016evaluating}
+14. \textbf{Subedi, M.R.} R. (2016). \emph{Evaluating geospatial
+distribution of drought, drought-induced tree mortality, and biomass
+loss in east texas, US}. Texas A\&M University-Kingsville.
+
+\bibitem[\citeproctext]{ref-subedi2016evidence}
+15. \textbf{Subedi, M.R.}, \& Timilsina, Y. (2016). Evidence of user
+participation in community forest management in the mid-hills of nepal:
+A case of rule making and implementation. \emph{Small-Scale Forestry},
+\emph{15}(2), 257--270.
+
+\bibitem[\citeproctext]{ref-oli2015effects}
+16. Oli, B., \& \textbf{Subedi, M.R.} (2015). Effects of management
+activities on vegetation diversity, dispersion pattern and stand
+structure of community-managed forest (shorea robusta) in nepal.
+\emph{International Journal of Biodiversity Science, Ecosystem Services
+\& Management}, \emph{11}(2), 96--105.
+
+\bibitem[\citeproctext]{ref-subedi2014distribution}
+17. \textbf{Subedi, M.R.} R., \& Timilsina, Y. P. (2014). Distribution
+pattern of cinnamomum tamala in annapurna conservation area, kaski,
+nepal. \emph{Nepal Journal of Science and Technology}, \emph{15}(2),
+29--36.
+
+\bibitem[\citeproctext]{ref-subedi2012allometric}
+18. \textbf{Subedi, M.R.} R., \& Sharma, R. P. (2012). Allometric
+biomass models for bark of cinnamomum tamala in mid-hill of nepal.
+\emph{Biomass and Bioenergy}, \emph{47}, 44--49.
+
+\bibitem[\citeproctext]{ref-subedi2009climate}
+19. \textbf{Subedi, M.R.} (2009). Climate change and its potential
+effects on tree line position: An introduction and analysis.
+\emph{Greenery--J. Environ. Biodiver}, \emph{7}, 17--21.
+
+\end{CSLReferences}
+
+\section{Presentations}\label{presentations}
+
+\subsection{Peer-Reviewed Conference
+Presentations}\label{peer-reviewed-conference-presentations}
+
+\textbf{Subedi, M.R.} (February 2022). \emph{Do LiDAR data offer a
+practical significance in LULC classification over NAIP data? comparing
+multiple machine learning algorithms using geographic object-based
+analysis coupled with target oriented validation}.Association of
+American Geographers (AAG), New York
+
+\textbf{Subedi, M.R.} (December 2021). \emph{Do LiDAR data provide
+practical significance to improve classification accuracy over NAIP
+Data? evidence from target-oriented validation strategies} North Central
+Texas Council of Governments {[}Virtual{]}
+
+\textbf{Subedi, M.R.} (November 2021). \emph{Large-area land use/land
+cover classification of very high-resolution imagery: accounting for
+spatial bias in sample data}. South Central Arc User Group (Grapevine,
+Texas).
+
+Xi, W., \textbf{Subedi, M.R.} Liu. Z \& Yan M. (August 2021).
+\emph{Widespread increase of tree mortality triggered by an exceptional
+drought in east Texas, USA}. Ecological Society of America (ESA, Virtual
+Annual Meeting 2021).
+
+Hedquest, Brent \& \textbf{Subedi, M.R.} (April 2018). \emph{Using
+Geospatial Tools for Documentation and Preservation of Historical
+Structures and in Undergraduate Experiential Learning at Rancho La
+Union, Zapata County, Texas}. American Association of Geographers.
+
+\textbf{Subedi, M.R.} (April 2016). \emph{Creating a Geographical
+Information System (GIS) Database for Documenting Historical Structures
+at Rancho La Union Ranch, Zapata County, Texas}. Poster presented at
+South Central Arc User Group Annual Meeting.
+
+\textbf{Subedi, M.R.}, (November 2015). \emph{Comparing interpolation
+techniques for Annual Standard Precipitation Evaporation Index (SPEI)
+mapping using multiple evaluation criteria: a case study of east Texas,
+USA}. Poster resented at Del Mar College on GIS Day.
+
+\textbf{Subedi, M.R.} \& Xi, Weimin (October, 2015). \emph{Evaluating
+drought-induced tree mortality and biomass loss in east Texas forests}.
+Poster presented at Pathway symposium, at Texas A\&M University-Corpus
+Christi.
+
+\textbf{Subedi, M.R.} \& Xi, Weimin (August, 2015). \emph{Evaluating
+extreme drought-induced tree mortality and biomass loss in east Texas
+using Forest Inventory and Analysis (FIA) data}. Poster presented at
+100th ESA meeting.
+
+\textbf{Subedi, M.R.} \& Xi, Weimin (April, 2014). \emph{Spatiotemporal
+pattern and variability of drought in East Texas, USA}. Presented at
+Javelina research symposium, at Texas A\&M University-Kingsville.
+
+\section{Work Experience}\label{work-experience}
+
+\begin{cventries}
+    \cventry{Post-Doctoral Associate}{Warnell School of Forestry}{Athens, GA}{Jun.2022 - Present}{\begin{cvitems}
+\item Designed and implemented a comprehensive Light Detection and Ranging (LiDAR) and Global Ecosystem Dynamics Investigation (GEDI) data processing workflow, ensuring seamless integration with Forest Inventory and Analysis (FIA) data for accurate and detailed forest assessments.
+\item Various quality control measures on processed LiDAR and GEDI data to ensure data accuracy and reliability in subsequent analyses.
+\item Developed a comprehensive methodology for identifying and mapping potential habitats for Northern Bobwhite, leveraging the combined power of LiDAR and FIA datasets.
+\item Conducted extensive spatial analyses to identify key habitat features, contributing valuable insights into the ecological requirements of Northern Bobwhite populations.
+\end{cvitems}}
+    \cventry{Graduate Research Assistant}{Geospatial Research Technologies Lab}{Lubbock, TX}{Jan. 2019 - Aug.2022}{\begin{cvitems}
+\item Developed a comprehensive methodology for high-resolution (NAIP orthoimagery) land use land cover (LULC) mapping over large extents (15 counties), utilizing advanced remote sensing techniques and spatial modeling.
+\item Integrated multi-sensor data sources, including satellite imagery, aerial photography, and ground truth data, to enhance the accuracy and detail of the LULC maps.
+\item Employed machine learning algorithms and classification techniques to automate the mapping process, resulting in time-efficient and consistently accurate land cover classifications.
+\item Oversaw the daily activities of undergraduate research assistants ( four in total), providing guidance on project tasks, data collection methods, and GIS analysis techniques.
+\item Conducted regular training sessions to enhance the technical skills of the research team, fostering a collaborative and learning-oriented environment.
+\item Collaborated with fellow lab members on diverse geospatial projects, offering expertise in data analysis, interpretation, and visualization.
+\item Provided support in the selection and application of appropriate geospatial analysis methods, ensuring the accuracy and reliability of research outcomes.
+\item Conducted quality assurance checks on geospatial datasets, identifying and rectifying inconsistencies to maintain data integrity.
+\end{cvitems}}
+    \cventry{Research Assistant}{West Virginia University}{Morgantown, WV}{Aug. 2017 - Dec.  2018}{\begin{cvitems}
+\item Collaborated with the project supervisor to analyze tree ring datasets, ensuring accuracy and reliability in the interpretation of research findings.
+\item Developed and executed a comprehensive forest inventory plan, including the establishment of sampling protocols and data collection methodologies.
+\item Applied advanced GIS techniques to integrate spatial data with forest inventory information, enhancing the precision of resource assessments.
+\item Implemented automated data logging systems using MayFly data loggers, improving efficiency in soil moisture and temperature collection.
+\item Conducted regular maintenance and calibration of data loggers to ensure the reliability of recorded soil variables and sap flow measurment.
+\end{cvitems}}
+    \cventry{GIS Analyst-Intern}{Geospatial Research Laboratory (GSRL)}{Kingsville, TX}{Aug. 2016 - May. 2017}{\begin{cvitems}
+\item Offered expertise in troubleshooting ArcGIS suite-related issues, ensuring the seamless functioning of geospatial analysis tools within the GSRL.
+\item Contributed to lab upgrades, including software updates and hardware enhancements, optimizing the overall efficiency of GIS operations.
+\item Provided training sessions for the new lab manager, ensuring a smooth transition and continuity in the laboratory's operational processes.
+\item Established standardized procedures for lab management, including data organization, storage, and maintenance.
+\item Participated in fieldwork activities, assisting in GPS data collection and subsequent differential correction processes to enhance location accuracy.
+\item Ensured that laboratory assignments aligned with the latest features and functionalities of the upgraded ArcGIS suite, facilitating an up-to-date educational experience for students.
+\end{cvitems}}
+    \cventry{Lab Manager}{Geospatial Research Laboratory (GSRL)}{Kingsville, TX}{Jan. 2014 - Jul. 2016}{\begin{cvitems}
+\item Provided guidance and support to students working on GIS projects, fostering a collaborative learning environment.
+\item Addressed questions and challenges, ensuring students' understanding and success in completing assignments.
+\item Analyzed Forest Inventory and Analysis (FIA) data databases and created biomass and volume distribution by County, forest ownership class, spatiotemporal variations of biomass and volume distribution in East Texas.
+\item Created student's labs, produced lab grading rubrics, designed and conducted training and workshops (Intro to ArcGIS, spatial and attribute query, Model builder, and ArcGIS Online).
+\item Managed, manipulated, and integrated GIS, LiDAR (ArcGIS platform), KMZ, GPS, and CAD data to produce maps.
+\item Provided mapping support and data analysis to civil engineers, environmental engineers, wildlife biologists, and geologists.
+\item Provided technical support for ArcGIS suite, troubleshoot and guided around 80 undergraduate students in their projects for two years.
+\end{cvitems}}
+    \cventry{Researcher}{Community Based Forest and Tree Management in the Himalayas (ComForM)}{Pokhara, Nepal}{Sep. 2013 - Jan. 2014}{\begin{cvitems}
+\item Worked mostly in ArcGIS 10.x (including desktop extensions) environment
+\item Developed comprehensive data collection templates, ensuring uniformity and efficiency in the gathering of essential information.
+\item Conducted interviews with community members, employing a participatory approach to gather firsthand knowledge and perspectives.
+\item Responded to inquiries and phone calls, providing accurate and timely information to enhance community engagement.
+\item Engaged local people to prepare participatory timber marketing route maps.
+\end{cvitems}}
+    \cventry{Documentation Officer}{Federation of Community Forests Users' Nepal (FECOFUN)}{Kathmandu, Nepal}{Feb. 2012 - Sep. 2013}{\begin{cvitems}
+\item Designed Geodatabase, database management, research, read and understand component drawings, geo-referencing, troubleshooting, create schematic procedures and specifications, and problem-solving.
+\item Trained local people on data collection using GPS (eTrex 20) devices, software programs (DNR Garmin, GPS utility,  ArcView, and Google Earth).
+\item Acquired loal conflict location data and prepared maps.
+\item Designed research, developed data collection tools and reporting tools and templates.
+\item Trained 18 staffs and 20 practitioners (Modular training participants): Data collection, Data entry in MS Access and excel spreadsheet, open-ended questions, and GPS handling
+\item Managed relational database (MS Access) of activities, conducted by central and district chapters of the program.
+\item Developed and improved training contents, delivered and facilitated workshops and training.
+\end{cvitems}}
+    \cventry{GIS Data Analyst-land use change and forestry}{Association for the Development of Environment and People in Transition (adaptnepal)}{Kathmandu, Nepal}{Jun. 2011 - Feb. 2012}{\begin{cvitems}
+\item Gathered, and analyzed meteorological data and performed geostatistical analyis.
+\item Prepared rainfall, and temperature distribution maps of Nepal.
+\item Extracted elevation data and classify vegetation types based on criteria defined by Intergovernmental Panel on Climate Change (IPCC).
+\item Analyzed the Land use change and forestry data in preparing second national communication report to United Nations Framework Convention on Climate Change (UNFCCC).
+\item Biomass loss/accumulation maps by vegetation over two decades (1990-2010) with different biomass growth factors.
+\item Discussed, and submitted progress reports as necessary to immediate supervisor and working team.
+\end{cvitems}}
+    \cventry{Research Assistant}{ComForM}{Pokhara, Nepal}{Dec. 2009 - May 2011}{\begin{cvitems}
+\item Assisted in developing comprehensive data collection templates, ensuring uniformity and efficiency in gathering essential information.
+\item Conducted GPS boundary survey of 10 community forests, assited in image analysis (GeoEye) and collected ground control points.
+\item Collected forest inventory data from permanent sample plots.
+\item Conducted stakeholder and focus groups meetings, fostering collaboration and obtaining valuable insights for research purposes.
+\item Conducted interviews with community members, employing a participatory approach to gather firsthand knowledge and perspectives.
+\item Executed meticulous data entry and analysis, employing statistical and spatial techniques to derive meaningful patterns and trends.
+\end{cvitems}}
+\end{cventries}
+
+\section{Teaching Experience}\label{teaching-experience}
+
+\begin{cventries}
+    \cventry{Instructor}{Aerial Photo Interpretation (5404)}{Texas Tech University}{July. 2020 - Aug.2020}{\begin{cvitems}
+\item Co-taught with Dr. Carlos Portillo as a part of teaching practicum
+\end{cvitems}}
+    \cventry{Teaching Assistant}{GEOL 5312; GEOL 5313}{TAMU-Kingsville}{Aug. 2014 - Jul. 2016}{\begin{cvitems}
+\item Duing spring, summer and fall semester
+\end{cvitems}}
+    \cventry{Upward Bound  Math And Science  Students}{Math and Science in GIS}{TAMU-Kingsville}{Jun. 2016 - Jul. 2016}{}\vspace{-4.0mm}
+\end{cventries}
+
+\section{Awards and Honors}\label{awards-and-honors}
+
+\begin{cventries}
+    \cventry{Graduate Research Assistantship}{Department of Natural Resources Management}{Lubbock, TX}{Jan. 2019 - Present}{}\vspace{-4.0mm}
+    \cventry{Graduate scholarship}{College of Graudate Studies}{Kingsville, TX}{Jan. 2014}{\begin{cvitems}
+\item Amount: \$1000 USD.
+\end{cvitems}}
+    \cventry{Housing scholarship}{Texas A\&M University}{Kingsville, TX}{Jan. 2014 - Aug. 2014}{}\vspace{-4.0mm}
+    \cventry{Merit scholarship}{Institute of Forestry}{Pokhara, Nepal}{2005 - 2009}{}\vspace{-4.0mm}
+\end{cventries}
+
+\section{Grants}\label{grants}
+
+\begin{cventries}
+    \cventry{Elo and Urbanvosky Fellowship}{The Urbanovsky endowment}{Texas Tech University, Lubbock}{2021-2014}{\begin{cvitems}
+\item begin in Fall 2021 through 2024
+\item Funding Amount: \$15000/year
+\end{cvitems}}
+    \cventry{Fish Endowed Scholarship}{Hallie I. and Ernest B. Fish Endowed Scholarship}{Texas Tech University, Lubbock}{2021-2022}{\begin{cvitems}
+\item Begin Fall 2021 through Spring 2022
+\item Funding Amount: \$3000
+\end{cvitems}}
+    \cventry{Davidson Endowed Scholarship}{James A. ``Buddy'' Davidson Charitable Foundation}{Texas Tech University, Lubbock}{2019}{\begin{cvitems}
+\item Funding Amount: \$2000
+\end{cvitems}}
+    \cventry{Student sustainability competition award}{Office of campus sustainability Texas A\&M University-Kingsville}{Texas A\&M University, Kingsville}{2015}{\begin{cvitems}
+\item Awarded to Green Hands Team : Mukti R. Subedi, Rohan Jayasuriya, and Nippun Bhadsavle
+\item Funding amount: \$3000 USD.
+\end{cvitems}}
+    \cventry{Forest carbon stock assessment of REDD+ piloting area (Khasur VDC)}{Nepal Federation of Indigenous Nationalities (NEFIN)}{Kathmandu, Nepal}{2012}{\begin{cvitems}
+\item Co-PI a project funded by NEFIN to estimate carobn stock assessement of indigeneous people managed forests.
+\item Funding amount: \$10,000 USD.
+\end{cvitems}}
+    \cventry{Political economy of re-centralizing CF in Nepal}{Community Based Forests and Trees Management in the Himalaya (ComForM)}{Pokhara, Nepal}{2012}{\begin{cvitems}
+\item Funding amount: \$5,500 USD.
+\end{cvitems}}
+    \cventry{Undergraduate Research Grant}{Annapurna Conservation Area Project (ACAP)}{Pokhara, Nepal}{2009}{\begin{cvitems}
+\item Competitive undergraduate Research Grant awared to conduct research on Biomass production and distribution pattern of Cinnamumum tamala  in Mijuredanda VDC
+\item Funding amount: \$400 USD.
+\end{cvitems}}
+    \cventry{Research Grant}{ComForm}{Pokhara, Nepal}{2009}{\begin{cvitems}
+\item Co-PI a project to assess formulation and implementation status of community forest operation plan: a case study from Tanahun and Parbat districts
+\item Funding amount: \$3,000 USD.
+\end{cvitems}}
+    \cventry{Exploratory Research Grant}{District Forest Office}{Dhankuta, Nepal}{2009}{\begin{cvitems}
+\item Co-Pi a project funded to estimate diversity and distribution of Lichens and Orhids in Dhankuta district
+\item Funding amount: \$800 USD.
+\end{cvitems}}
+    \cventry{Resource Assessment Grant}{ACAP, Lwang Unit}{Pokhara, Nepal}{2008}{\begin{cvitems}
+\item Co-PI a project funded to execute forest resource assessment of Lwang Unit Conservation of ACAP
+\item Funding amount: \$3,000 USD.
+\end{cvitems}}
+    \cventry{Working Plan}{Satanchuli Community Forest User Group}{Chitwan, Nepal}{2008}{\begin{cvitems}
+\item A project awared to prepare working plan of Satanchuli Community Forest User Group.
+\item Funding amount: \$850 USD.
+\end{cvitems}}
+\end{cventries}
+
+\section{Service}\label{service}
+
+\begin{cventries}
+    \cventry{Gusest Editor}{Novel Approaches in Tropical Forests Mapping and Monitoring - Time for Operationalization}{Remote Sensing, MDPI}{2020- present}{\begin{cvitems}
+\item Ongoing
+\end{cvitems}}
+    \cventry{Reviewer}{Remote Sensing, Land, Forestry (MDPI)}{MDPI}{2022- Present}{\begin{cvitems}
+\item Reviewed 17 manuscripts
+\end{cvitems}}
+    \cventry{Reviewer}{Journal of Forestry Research (JFR)}{Springer}{2016- Present}{\begin{cvitems}
+\item Reviewed seven manuscripts
+\end{cvitems}}
+    \cventry{Reviewer}{Forestry Chronicles}{Canadian Institute of Forestry}{2020-Present}{\begin{cvitems}
+\item Reviewed two manuscripts
+\end{cvitems}}
+    \cventry{Reviewer}{Ecosystem Services}{Elsevier}{2016}{\begin{cvitems}
+\item Reviewed one manuscript
+\end{cvitems}}
+\end{cventries}
+
+\section{Certificates}\label{certificates}
+
+\begin{cventries}
+    \cventry{Certificate in GIS}{TAMUK}{}{Jun. 2016 - Present}{}\vspace{-4.0mm}
+    \cventry{FME Desktop 2016 Basic}{FME Software}{}{Jan. 2017 - Present}{}\vspace{-4.0mm}
+    \cventry{Geographic Information Systems (GIS) Specialization}{UC DAVIS}{}{Dec. 2016 - Present}{}\vspace{-4.0mm}
+    \cventry{}{}{}{}{}\vspace{-4.0mm}
+\end{cventries}
+
+\section{Current Memberships}\label{current-memberships}
+
+\begin{itemize}
+\tightlist
+\item
+  Mendeley-International Advisor, since 2012
+\item
+  Society of American Foresters (SAF)
+\item
+  South Central Arc User Group (SCAUG)
+\item
+  American Association of Geographers(AAG)
+\item
+  Ecological Society of America (ESA)
+\end{itemize}
+
+
+\label{LastPage}~
+\end{document}

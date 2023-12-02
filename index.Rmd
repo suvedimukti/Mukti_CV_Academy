@@ -1,0 +1,36 @@
+---
+graphics: yes
+name: Mukti Ram
+surname: Subedi
+headcolor: 414141
+#414141
+#qualifications: 
+position: "Post Doctoral Associate"
+address: "180 E Green St, Athens, GA, 30602"
+phone: "+1 361-228-2801"
+www: suvedimukti.github.io/
+email: "mukti.subedi@uga.edu"
+twitter: suvedimukti
+github: suvedimukti
+linkedin: subedimukti
+aboutme: |
+  I am a forester, geospatial and remote sensing data analyst.
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+csl: "csl/apa7-cv-ms-edition.csl"
+header-includes:
+  # allow URLs to break at any character
+  - \usepackage{xurl}
+  # - \usepackage{fancyhdr}
+  # - \pagestyle{fancy}
+  # - \fancyhf{}
+  # - \fancyhead[R]{\thepage}
+knit: (function(input, ...) {lapply(bookdown::render_book(input, output_file = "docs/Mukti_Subedi_CV", output_format = "all", envir = globalenv(), ...), browseURL)})
+---
+
+```{r setup, include=FALSE, cache = FALSE}
+library(knitr)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(tidyverse)
+library(vroom)
+```

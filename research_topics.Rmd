@@ -1,0 +1,8 @@
+# Research Topics
+
+ * Land Use and Land Cover Mapping
+ * Time Series Image Analysis
+ * Image Acquisition, Processing, Analysis and Visualization
+ * Carbon Stock Assessment
+ * Forests and Trees Modeling
+ * Human Dimensions in Forestry

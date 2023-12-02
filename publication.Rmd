@@ -1,0 +1,15 @@
+# Publications
+
+<!-- # Selected Publications -->
+<!--  -->
+<!-- ::: {#refs_selected} -->
+<!-- ::: -->
+
+## Refereed Journal Papers
+
+```{r}
+vitae::bibliography_entries("bib/mukti_journal.bib")
+# arrange(desc(row_number())) %>%
+# relocate(annote)
+```
+

@@ -1,0 +1,8 @@
+# Work Experience
+
+```{r working-experience}
+vroom::vroom(file = "./data/working-experience.csv",delim = ",",show_col_types = FALSE)%>%
+  dplyr::filter(highlight == 1) %>%
+  tidyr::fill(-why) %>%
+  vitae::detailed_entries(what, when, with, where, why, .protect = FALSE)
+```

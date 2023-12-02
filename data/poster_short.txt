@@ -1,0 +1,19 @@
+Subedi, M. (February 2022). *Do LiDAR data offer a practical significance in LULC classification over NAIP data? comparing multiple machine learning algorithms using geographic object-based analysis coupled with target oriented validation*.Association of American Geographers (AAG), New York
+
+Subedi, M. (December 2021). *Do LiDAR data provide practical significance to improve classification accuracy over NAIP Data? evidence from target-oriented validation strategies* North Central Texas Council of Governments [Virtual]  
+
+Subedi, M. (November 2021). *Large-area land use/land cover classification of very high-resolution imagery: accounting for spatial bias in sample data*. South Central Arc User Group (Grapevine, Texas).
+
+Xi, W., Subedi, M. Liu. Z & Yan M. (August 2021). *Widespread increase of tree mortality triggered by an exceptional drought in east Texas, USA*. Ecological Society of America (ESA, Virtual Annual Meeting 2021).
+
+Hedquest, Brent & Subedi, M. (April 2018). *Using Geospatial Tools for Documentation and Preservation of Historical Structures and in Undergraduate Experiential Learning at Rancho La Union, Zapata County, Texas*. American Association of Geographers.
+
+Subedi, M. (April 2016). *Creating a Geographical Information System (GIS) Database for Documenting Historical Structures at Rancho La Union Ranch, Zapata County, Texas*. Poster presented at South Central Arc User Group Annual Meeting.
+
+Subedi, M., (November 2015). *Comparing interpolation techniques for Annual Standard Precipitation Evaporation Index (SPEI) mapping using multiple evaluation criteria: a case study of east Texas, USA*. Poster resented at Del Mar College on GIS Day. 
+
+Subedi, M. & Xi, Weimin (October, 2015). *Evaluating drought-induced tree mortality and biomass loss in east Texas forests*. Poster presented at Pathway symposium, at Texas A&M University-Corpus Christi.
+
+Subedi, M. & Xi, Weimin (August, 2015). *Evaluating extreme drought-induced tree mortality and biomass loss in east Texas using Forest Inventory and Analysis (FIA) data*. Poster presented at 100th ESA meeting.
+ 
+Subedi, M. & Xi, Weimin (April, 2014). *Spatiotemporal pattern and variability of drought in East Texas, USA*. Presented at Javelina research symposium, at Texas A&M University-Kingsville.
